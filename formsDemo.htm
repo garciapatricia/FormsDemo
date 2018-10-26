@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Forms</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h3>Form Example</h3>
+        <form method = "post" action = "http://mattredmond.ca/formmail.aspx">
+			<fieldset>
+				<legend> Your Info: </legend>
+				<div>
+					<label for= "txtFullName">Full Name</label>
+					<input type = "text" name="Full_Name" id = "txtfullName" placeholder = "John Doe" maxlength = "20" size = "20">
+				</div>
+				<div>
+				<label for= "txtFullName" >Email &nbsp; &nbsp; &nbsp;&nbsp; </label>
+				<input  type = "text" name="Email" id = "txtfullName" placeholder = "john.doe@nscc.ca" maxlength = "20" size = "20" >
+				</div>
+				<div>
+				<!--type ="password" IT WILL SHOW ASTERISK-->
+				<label for= "txtFullName"  >Nickname</label>
+				<input  type = "text" name="nickname" id = "txtNickame" placeholder = "john.doe@nscc.ca" maxlength = "20" size = "20" >
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend> Your Details: </legend>
+				<div>
+					<label>Entry Rational:</label><br><br>
+					<textarea name = "Entry" id = "txtEntry" cols = "60" rows = "5" placeholder = " Why do you want to enter our contest?">  </textarea>
+				</div>
+				<label>Age:</label>
+				<select name="Age" id="drpAge">
+					<option value="Under_12">Under 12 not allowed</option>
+					<option value="12_18"> 12-18</option>
+					<option value="19_25"> 19_25</option>
+					<option value="26-40"> 26-40</option>
+					<option value="41-60"> 41-60</option>
+					<option value="61 and over"> 61 and over</option>
+					
+				</select>
+				<div>
+					Where did you hear about............?
+					<br>
+					<label>
+					<input type="checkbox" name="Contest" id = "contest_0" value = "online">
+					Online
+					</label>
+					<label>
+					<input type="checkbox" name="Contest" id = "contest_1" value = "newspaper">
+					Newspaper
+					</label>
+					<label>
+					<input type="checkbox" name="Contest" id = "contest_2" value = "flyer">
+					Flyer
+					</label>
+					<label>
+					<input type="checkbox" name="Contest" id = "contest_3" value = "friend">
+					Friend
+					</label>
+				</div><br>
+				<div>
+					What is your hair colour <br>
+					<!--If you remove name numbers it will only let you pick one but naming the hair different
+					it will allow you to select multiple colors-->
+					<label>
+						<input type="radio" name="Hair" Value="Blonde" id="hair_blonde">
+						Blonde
+					</label>
+					<label>
+						<input type="radio" name="Hair" Value="Black" id="hair_black">
+						Black
+					</label>
+					<label>
+						<input type="radio" name="Hair" Value="Brunette" id="hair_brunette">
+						Brunette
+					</label>
+					<label>
+						<input type="radio" name="Hair" Value="Red" id="hair_red">
+						Red
+					</label>
+					<label>
+						<input type="radio" name="Hair" Value="Ginger" id="hair_ginger">
+						Ginger
+					</label>
+					<label>
+						<input type="radio" name="Hair" Value="Brown" id="hair_brown">
+						Brown
+					</label>
+					<label>
+						<input type="radio" name="Hair" Value="Auburn" id="hair_auburn">
+						Auburn
+					</label>
+				</div>
+				<div>
+					What is your favorite colour?
+					<br>
+					<label>Select:</label>
+					<input type="color" name="favColour" id="favColour">
+				</div>
+				<div>
+					What is your favorite file?
+					<br>
+					<label>Select:</label>
+					<input type="file" name="favfile" id="favfile">
+				</div>
+				<div>
+					What is your favorite date?
+					<br>
+					<label>Select:</label>
+					<input type="date" name="favdate" id="favdate">
+				</div>
+				<div>
+					What is your favorite Number?
+					<br>
+					<label>1</label>
+					<input type="range" name="favrange" id="favrange" min="1" max="10" step=".5">
+					<label>10</label>
+				</div>
+				
+			</fieldset>
+			<br><br>
+			<input type = "submit" >
+			<input type = "reset" >
+		
+		</form>
+    </body>
+</html>
